@@ -1,13 +1,13 @@
 // Reverse String Algorithm
+
 let reverseString = function (str) {
-    // Step 1: Convert the string to an array of characters
+    
     const charArray = str.split("");
     console.log(charArray);
-    // Step 2: Initialize two pointers
+
     let left = 0;
     let right = str.length - 1;
   
-    // Step 3: Swap characters using the two-pointer approach
     while (left < right) {
       // Swap characters
       [charArray[left], charArray[right]] = [charArray[right], charArray[left]];
@@ -17,10 +17,8 @@ let reverseString = function (str) {
       right--;
     }
   
-    // Step 4: Convert the array back to a string
     const reversedStr = charArray.join("");
   
-    // Step 5: Return the reversed string
     return reversedStr;
   };
   
