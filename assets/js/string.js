@@ -1,29 +1,11 @@
-// Reverse String Algorithm
+function reverseString() {
+  var inputElement = document.getElementById("inputText");
+  var outputElement = document.getElementById("output");
 
-let reverseString = function (str) {
-    
-    const charArray = str.split("");
-    console.log(charArray);
+  // Get the input value and reverse it
+  var inputValue = inputElement.value;
+  var reversedValue = inputValue.split('').reverse().join('');
 
-    let left = 0;
-    let right = str.length - 1;
-  
-    while (left < right) {
-      // Swap characters
-      [charArray[left], charArray[right]] = [charArray[right], charArray[left]];
-  
-      // Move the pointers
-      left++;
-      right--;
-    }
-  
-    const reversedStr = charArray.join("");
-  
-    return reversedStr;
-  };
-  
-  // Implementation
-  const str = "hello world";
-  const reversed = reverseString(str);
-  console.log(`The reversed string for the given string '${str}' is ${reversed}`);
-  
+  // Display the reversed string
+  outputElement.textContent = "Reversed String: " + reversedValue;
+}

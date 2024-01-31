@@ -40,7 +40,15 @@
         Reversing a string involves changing the order of characters in a given string, effectively flipping it backward. It is achieved by iterating through the string from the last character to the first and appending each character to a new string or array.
         The resulting reversed string will have the characters in the opposite order, allowing for a backward representation of the original input string
       </p>
-     
+       <div class="revstring">
+      <div class="container">
+        <label for="inputText">Enter a String:</label>
+        <input type="text" id="inputText" placeholder="Type something text...">
+        <button type="button" class="btn btn-primary" onclick="reverseString()" >Reverse </button>
+
+        <p id="output"></p>
+      </div>
+    </div>
       
     </main>
 
@@ -63,6 +71,6 @@
       </div>
     </footer>
     <script src="assets/js/string.js"></script>
-    <script src="assets/js/theme.js" defer></script>
+    <script src="assets/js/theme.js"></script>
   </body>
 </html>
